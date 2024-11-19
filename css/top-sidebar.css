@@ -1,0 +1,184 @@
+/*----TOPSIDEBAR-LEFT---*/
+.topsidebar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 57px;
+    background-color: white;
+    border-bottom: 1px rgb(215, 215, 215) solid;
+    z-index: 100;
+}
+
+.top-sidebar-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 162px;
+    
+    margin-right: 60px;
+}
+
+.top-s-hamburgermenu{
+    width: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+
+.top-s-ytlogo{
+    width: 90px;
+}
+
+/*----TOPSIDEBAR-MIDDLE---*/
+
+.top-sidebar-middle{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 470px;
+    
+}
+
+.search{
+    max-width: 345px;
+    width: 0;
+    flex:1;
+    height: 40px;
+    padding-left: 8px;
+    border-radius: 1px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 16px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+.search:focus{
+    outline: none;
+    border:  1px solid blue;
+}
+.search::placeholder{
+    font-size: 16px;
+    color: rgb(129, 129, 129);
+}
+
+.searchbut{
+    height: 44px;
+    width: 64px;
+    border-radius: 1px;
+    border-color: rgb(204, 204, 204);
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 0px;
+    margin-right: 10px;
+    border-left: none;
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+    position: relative;  
+}
+
+.searchbut, .voicesearchbut, .create-but, .apps-but, .mychan-but, .notification-box, .yt-but{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.searchbut .taptext, .voicesearchbut .taptext, 
+.create-but .taptext, .apps-but .taptext, .mychan-but .taptext, 
+.notification-box .taptext, .yt-but .taptext{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    position: absolute;
+    bottom: -35px;
+    color: white;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 6px 8px 6px 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    white-space: nowrap;
+}
+
+.searchbut:hover .taptext, .voicesearchbut:hover .taptext, 
+.create-but:hover .taptext, .apps-but:hover .taptext, 
+.mychan-but:hover .taptext, .notification-box:hover .taptext, .yt-but:hover .taptext{
+    opacity: 0.95;
+}
+
+.searchbut:hover{
+    background-color: rgb(232, 231, 231);
+}
+
+.searchlogo{
+    width: 25px;
+    margin-top: 4px;
+}
+
+.voicesearchbut{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color:rgb(247, 247, 247);
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.voicesearchbut:hover{
+    background-color: rgb(232, 231, 231);
+
+}
+
+.voicesearchlogo{
+    width: 25px;
+    height: 25px;
+    margin-top: 4px;
+}
+
+
+/*----TOPSIDEBAR-RIGHT---*/
+
+.top-sidebar-right{
+    width: 182px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.icon-upload, .icon-apps, .icon-notifications{
+    width: 24px;
+}
+
+.mychan-img{
+    width: 32px;
+}
+
+.notification-box{
+    position: relative;
+}
+
+.notification-amount{
+    position:absolute;
+    background-color: rgb(227, 1, 1);
+    width: 15px;
+    height: 13px;
+    font-size: 11px;
+    font-weight: 500;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 15px;
+    right: -2px;
+    top: -2px;
+    padding-top: 1px;
+}
+
